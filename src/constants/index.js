@@ -19,6 +19,7 @@ import {
   pricewise,
   prisma,
   react,
+  c,
   redux,
   sass,
   snapgram,
@@ -39,23 +40,13 @@ import {
 
 export const skills = [
   {
-    imageUrl: css,
-    name: "CSS",
+    imageUrl: html,
+    name: "HTML",
     type: "Frontend",
   },
   {
-    imageUrl: git,
-    name: "Git",
-    type: "Version Control",
-  },
-  {
-    imageUrl: github,
-    name: "GitHub",
-    type: "Version Control",
-  },
-  {
-    imageUrl: html,
-    name: "HTML",
+    imageUrl: css,
+    name: "CSS",
     type: "Frontend",
   },
   {
@@ -64,9 +55,14 @@ export const skills = [
     type: "Frontend",
   },
   {
-    imageUrl: nextjs,
-    name: "Next.js",
+    imageUrl: typescript,
+    name: "TypeScript",
     type: "Frontend",
+  },
+  {
+    imageUrl: c,
+    name: "C#",
+    type: "Backend",
   },
   {
     imageUrl: nodejs,
@@ -76,6 +72,26 @@ export const skills = [
   {
     imageUrl: react,
     name: "React",
+    type: "Frontend",
+  },  
+  {
+    imageUrl: git,
+    name: "Git",
+    type: "Version Control",
+  },
+  {
+    imageUrl: github,
+    name: "GitHub",
+    type: "Version Control",
+  },  
+  {
+    imageUrl: nextjs,
+    name: "Next.js",
+    type: "Frontend",
+  },  
+  {
+    imageUrl: prisma,
+    name: "Prisma",
     type: "Frontend",
   },
   {
@@ -87,17 +103,7 @@ export const skills = [
     imageUrl: tailwindcss,
     name: "Tailwind CSS",
     type: "Frontend",
-  },
-  {
-    imageUrl: typescript,
-    name: "TypeScript",
-    type: "Frontend",
-  },
-  {
-    imageUrl: prisma,
-    name: "Prisma",
-    type: "Frontend",
-  },
+  },  
   {
     imageUrl: sql,
     name: "Sql",
@@ -107,7 +113,7 @@ export const skills = [
     imageUrl: docker,
     name: "Docker",
     type: "Backend",
-  },
+  }  
 ];
 
 export const experiences = [

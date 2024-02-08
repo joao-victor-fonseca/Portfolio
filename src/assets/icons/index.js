@@ -10,6 +10,7 @@ import mui from './mui.svg'
 import nextjs from './nextjs.svg'
 import nodejs from './nodejs.svg'
 import react from './react.svg'
+import c from './c.svg'
 import sql from './sql.svg'
 import redux from './redux.svg'
 import sass from './sass.svg'
@@ -54,6 +55,7 @@ export {
     sql,
     redux,
     sass,
+    c,
     tailwindcss,
     typescript,
     linkedin,
