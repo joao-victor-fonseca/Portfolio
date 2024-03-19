@@ -10,6 +10,7 @@ import {
   github,
   html,
   javascript,
+  java,
   linkedin,
   mongodb,
   motion,
@@ -34,7 +35,8 @@ import {
   aws,
   nlwIa,
   nlwEsportsLogo,
-  Dashgo
+  Dashgo,
+  CarShowcase  
   
 } from "../assets/icons";
 
@@ -62,6 +64,11 @@ export const skills = [
   {
     imageUrl: c,
     name: "C#",
+    type: "Backend",
+  },
+  {
+    imageUrl: java,
+    name: "Java",
     type: "Backend",
   },
   {
@@ -179,6 +186,19 @@ export const experiences = [
       "Explicar como os profissionais de cibersegurança usam as tecnologias, processos e procedimentos para defender todos os componentes da rede.",
     ],
   },
+  {
+    title: "Javascript",
+    company_name: "Cisco Networking Academy®",
+    icon: cisco,
+    iconBg: "#fff",
+    date: "2024",
+    points: [
+      "Domínio Avançado de JavaScript: Exploração de conceitos avançados para desenvolvimento web dinâmico.",
+      "Manipulação de Eventos e DOM: Aprender técnicas avançadas para interações dinâmicas com elementos da página.",      
+      "Desenvolvimento de Aplicações Interativas: Dominar a criação de aplicações web interativas e responsivas.",      
+      "Programação Assíncrona e Promises: Compreender e aplicar princípios de programação assíncrona para lidar com operações não bloqueantes.",       
+    ] 
+  },
   
 ]; 
 
@@ -210,6 +230,14 @@ export const projects = [
     link: "https://github.com/joao-victor-fonseca/Upload.AI?tab=readme-ov-file",
   },
   {
+    iconUrl: CarShowcase,
+    theme: "btn-back-blue",
+    name: "Car Showcase",
+    description:
+      "O site Car Showcase apresenta diversos tipos de carros, exibindo informações abrangentes em um formato bem elaborado, com suporte avançado para filtragem e paginação, proporcionando uma experiência aprimorada para o usuário.",
+    link: "https://github.com/joao-victor-fonseca/Car_Showcase",
+  },
+  {
     iconUrl: nlwEsportsLogo,
     theme: "btn-back-purple",
     name: "Find your Duo",
@@ -219,17 +247,10 @@ export const projects = [
   },
   {
     iconUrl: Dashgo ,
-    theme: "btn-back-orange",
+    theme: "btn-back-black",
     name: "DashGo",
     description: "Projeto desenvolvido durante o Ignite React da Rocketseat que mostra um Dashboard com gráfico e também um cadastro de usuários",
     link: "https://github.com/joao-victor-fonseca/Dashgo.",
   },
-  {
-    iconUrl: "https://user-images.githubusercontent.com/67246528/138088560-ad0dfd1c-1dbb-447f-9642-a8f3008695a8.png",
-    theme: "btn-back-yellow",
-    name: "DoWhile 2021",
-    description:
-      "Aplicação desenvolvida para o evento DoWhile 2021, onde as pessoas podem acessar e compartilhar suas expectativas para o DoWhile.",
-    link: "https://github.com/joao-victor-fonseca/NLW_HEAT",
-  },
+  
 ];

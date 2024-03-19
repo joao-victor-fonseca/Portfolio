@@ -34,9 +34,12 @@ import una from './una.svg'
 import rocketseat from './rocketseat.svg'
 import cisco from './cisco.svg'
 import aws from './aws.svg'
-import nlwIa from './nlwIa.png'
+import nlwIa from './nlwIa.svg'
 import nlwEsportsLogo from './nlw-esports-logo.svg'
 import Dashgo from './Dashgo.svg'
+import java from './java.svg'
+import CarShowcase from './CarShowcase.png'
+
 
 
 export {
@@ -46,6 +49,7 @@ export {
     github,
     html,
     javascript,
+    java,
     mongodb,
     motion,
     mui,
@@ -78,6 +82,8 @@ export {
     aws,
     nlwIa,
     nlwEsportsLogo,
-    Dashgo
+    Dashgo,
+    CarShowcase
+   
     
 }
