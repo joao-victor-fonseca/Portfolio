@@ -20,7 +20,7 @@ import {
   pricewise,
   prisma,
   react,
-  c,
+  csharp,
   redux,
   sass,
   snapgram,
@@ -62,7 +62,7 @@ export const skills = [
     type: "Frontend",
   },
   {
-    imageUrl: c,
+    imageUrl: csharp,
     name: "C#",
     type: "Backend",
   },
