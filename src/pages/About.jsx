@@ -11,22 +11,36 @@ export const About = () => {
     <section className="max-container">
       <h1 className="head-text">
         Olá, meu nome é{" "}
-        <span className="blue-gradient_text font-bold drop-shadow">João Victor</span>
+        <span className="blue-gradient_text font-bold drop-shadow">
+          João Victor
+        </span>
       </h1>
 
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
         <p>
-        Sou João Victor Fonseca Assis, possuo grande interesse em resolver problemas e aprender coisas novas. Estou sempre aberto a desafios, mudanças e a aquisição de novos conhecimentos.
-        <br />
-        Atualmente estou cursando a graduação em Ciência da Computação. Minha jornada na área de tecnologia começou com um profundo interesse em criar soluções digitais e, desde então, tenho trabalhado para me tornar um desenvolvedor habilidoso e eficiente.
-        <br />
-        Além da minha formação acadêmica, também busco constantemente aprimorar minhas habilidades através de projetos práticos e oportunidades de aprendizado online.
-        <br />
-        Estou atualmente em busca de novas oportunidades profissionais que me possibilitem aplicar e ampliar meu conhecimento na área de desenvolvimento de software. Caso esteja interessado em estabelecer conexões profissionais ou explorar colaborações, convido-o cordialmente a entrar em contato comigo. Estou ansioso para discutir possíveis sinergias e oportunidades de crescimento em conjunto.
+          Sou João Victor Fonseca Assis, possuo grande interesse em resolver
+          problemas e aprender coisas novas. Estou sempre aberto a desafios,
+          mudanças e a aquisição de novos conhecimentos.
+          <br />
+          Atualmente estou cursando a graduação em Ciência da Computação. Minha
+          jornada na área de tecnologia começou com um profundo interesse em
+          criar soluções digitais e, desde então, tenho trabalhado para me
+          tornar um desenvolvedor habilidoso e eficiente.
+          <br />
+          Além da minha formação acadêmica, também busco constantemente
+          aprimorar minhas habilidades através de projetos práticos e
+          oportunidades de aprendizado online.
+          <br />
+          Estou atualmente em busca de novas oportunidades profissionais que me
+          possibilitem aplicar e ampliar meu conhecimento na área de
+          desenvolvimento de software. Caso esteja interessado em estabelecer
+          conexões profissionais ou explorar colaborações, convido-o
+          cordialmente a entrar em contato comigo. Estou ansioso para discutir
+          possíveis sinergias e oportunidades de crescimento em conjunto.
         </p>
       </div>
 
-        <div className="py-10 flex flex-col">
+      <div className="py-10 flex flex-col">
         <h3 className="subhead-text">Minhas Habilidades</h3>
 
         <div className="mt-16 flex flex-wrap gap-12">
@@ -43,15 +57,13 @@ export const About = () => {
             </div>
           ))}
         </div>
-        </div>
-      
+      </div>
 
-        < div className="py-16">
-          
-          <h3 className="subhead-text">Certificados </h3>
-          <div className="mt-5 flex flex-col gap-3 text-slate-500"></div>
+      <div className="py-16">
+        <h3 className="subhead-text">Certificados </h3>
+        <div className="mt-5 flex flex-col gap-3 text-slate-500"></div>
 
-         <div className="mt-12 flex">
+        <div className="mt-12 flex">
           <VerticalTimeline>
             {experiences.map((experiences) => (
               <VerticalTimelineElement
@@ -70,7 +82,7 @@ export const About = () => {
                 contentStyle={{
                   borderBottom: "8px",
                   borderStyle: "solid",
-                  borderBottomColor: experiences.iconBg,
+                  borderBottomColor: experiences.borderBottomModel,
                   boxShadow: "none",
                 }}
               >
@@ -99,7 +111,6 @@ export const About = () => {
             ))}
           </VerticalTimeline>
         </div>
-
       </div>
 
       <hr className="border-slate-200" />

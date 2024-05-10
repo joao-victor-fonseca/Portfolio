@@ -97,7 +97,7 @@ export const Contact = () => {
               type="text"
               name="name"
               className="input"
-              placeholder="John"
+              placeholder="João Victor"
               required
               value={form.name}
               onChange={handleChange}
@@ -111,7 +111,7 @@ export const Contact = () => {
               type="email"
               name="email"
               className="input"
-              placeholder="John@gmail.com"
+              placeholder="joao@gmail.com"
               required
               value={form.email}
               onChange={handleChange}
@@ -125,7 +125,7 @@ export const Contact = () => {
               name="message"
               rows="4"
               className="textarea"
-              placeholder="Escreva aqui sua opinião..."
+              placeholder="Escreva aqui sua mensagem..."
               value={form.message}
               onChange={handleChange}
               onFocus={handleFocus}
@@ -143,11 +143,12 @@ export const Contact = () => {
             {loading ? "Enviando..." : "Enviar"}
           </button>
 
-
           <div className="flex flex-col gap-2 justify-center items-center ">
             <div className="flex gap-2 h-10">
               <LinkedinShareButton
-                url={"https://www.linkedin.com/in/jo%C3%A3o-victor-fonseca-assis-b17516207/"}
+                url={
+                  "https://www.linkedin.com/in/jo%C3%A3o-victor-fonseca-assis-b17516207/"
+                }
               >
                 <LinkedinIcon size={42} round />
               </LinkedinShareButton>
@@ -158,10 +159,10 @@ export const Contact = () => {
               >
                 <WhatsappIcon size={42} round />
               </WhatsappShareButton>
-
             </div>
             <div className="text-slate-900 font-semibold text-xl">
-              joaovictorfosecaassis@gmail.com - (31) 97177-2211
+              joaovictorfosecaassis@gmail.com <br />
+              <p className="flex justify-center">(31) 97177-2211</p>
             </div>
           </div>
         </form>

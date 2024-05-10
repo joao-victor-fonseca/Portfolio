@@ -1,43 +1,33 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
 import {
-  car,
   contact,
   css,
   docker,
-  estate,
-  express,
   git,
   github,
   html,
   javascript,
   java,
   linkedin,
-  mongodb,
-  motion,
-  mui,
   nextjs,
+  vue,
   nodejs,
-  pricewise,
   prisma,
   react,
   csharp,
-  redux,
   sass,
-  snapgram,
   sql,
-  summiz,
   tailwindcss,
-  threads,
   typescript,
   una,
   rocketseat,
   cisco,
   aws,
+  Oracle,
+  Pmi,
   nlwIa,
   nlwEsportsLogo,
   Dashgo,
-  CarShowcase  
-  
+  CarShowcase,
 } from "../assets/icons";
 
 export const skills = [
@@ -80,7 +70,7 @@ export const skills = [
     imageUrl: react,
     name: "React",
     type: "Frontend",
-  },  
+  },
   {
     imageUrl: git,
     name: "Git",
@@ -90,12 +80,17 @@ export const skills = [
     imageUrl: github,
     name: "GitHub",
     type: "Version Control",
-  },  
+  },
   {
     imageUrl: nextjs,
     name: "Next.js",
     type: "Frontend",
-  },  
+  },
+  {
+    imageUrl: vue,
+    name: "Vue.js",
+    type: "Frontend",
+  },
   {
     imageUrl: prisma,
     name: "Prisma",
@@ -110,7 +105,7 @@ export const skills = [
     imageUrl: tailwindcss,
     name: "Tailwind CSS",
     type: "Frontend",
-  },  
+  },
   {
     imageUrl: sql,
     name: "Sql",
@@ -120,7 +115,7 @@ export const skills = [
     imageUrl: docker,
     name: "Docker",
     type: "Backend",
-  }  
+  },
 ];
 
 export const experiences = [
@@ -129,6 +124,7 @@ export const experiences = [
     company_name: "Centro Universitário Una",
     icon: una,
     iconBg: "#fff",
+    borderBottomModel: "#e90d2c",
     date: " 2023 -  2027",
     points: [
       "Desenvolvi uma sólida compreensão dos fundamentos da ciência da computação, incluindo algoritmos, estruturas de dados, teoria da computação e linguagens de programação. Essa base abrangente permitirá que você aborde uma variedade de desafios tecnológicos.",
@@ -142,6 +138,7 @@ export const experiences = [
     company_name: "RockeSeat",
     icon: rocketseat,
     iconBg: "#1a1a1e",
+    borderBottomModel: "#1a1a1e",
     date: " 2021 - 2022",
     points: [
       "Desenvolvimento, fundamentos da programação, HTML, CSS, Javascript.",
@@ -153,6 +150,7 @@ export const experiences = [
     company_name: "RockeSeat",
     icon: rocketseat,
     iconBg: "#1a1a1e",
+    borderBottomModel: "#1a1a1e",
     date: "2022",
     points: [
       "Estudei nessa plataforma completa onde aprendi programação com o objetivo de tornar-me Full Stack e me especializar em diversas tecnologias",
@@ -166,18 +164,19 @@ export const experiences = [
     company_name: "Amazon Web Services (AWS)",
     icon: aws,
     iconBg: "#fff",
+    borderBottomModel: "#ff9900",
     date: "2023",
     points: [
       "Aquisição de conhecimento e habilidades essenciais para a computação em nuvem: O curso fornece uma base sólida nos conceitos e serviços essenciais da AWS, que são essenciais para profissionais que desejam trabalhar com computação em nuvem.",
       "Experiência prática com os serviços da AWS: O curso inclui laboratórios práticos que permitem aos alunos aplicar os conceitos aprendidos em um ambiente real.",
-    ],  
-      
+    ],
   },
   {
     title: "Cibersecurity Essentials",
     company_name: "Cisco Networking Academy®",
     icon: cisco,
     iconBg: "#fff",
+    borderBottomModel: "#c72131",
     date: "2023",
     points: [
       "Descrever as táticas, técnicas e procedimentos utilizados por cibercriminosos.",
@@ -191,16 +190,58 @@ export const experiences = [
     company_name: "Cisco Networking Academy®",
     icon: cisco,
     iconBg: "#fff",
+    borderBottomModel: "#c72131",
     date: "2024",
     points: [
       "Domínio Avançado de JavaScript: Exploração de conceitos avançados para desenvolvimento web dinâmico.",
-      "Manipulação de Eventos e DOM: Aprender técnicas avançadas para interações dinâmicas com elementos da página.",      
-      "Desenvolvimento de Aplicações Interativas: Dominar a criação de aplicações web interativas e responsivas.",      
-      "Programação Assíncrona e Promises: Compreender e aplicar princípios de programação assíncrona para lidar com operações não bloqueantes.",       
-    ] 
+      "Manipulação de Eventos e DOM: Aprender técnicas avançadas para interações dinâmicas com elementos da página.",
+      "Desenvolvimento de Aplicações Interativas: Dominar a criação de aplicações web interativas e responsivas.",
+      "Programação Assíncrona e Promises: Compreender e aplicar princípios de programação assíncrona para lidar com operações não bloqueantes.",
+    ],
   },
-  
-]; 
+  {
+    title: "Java Foundations",
+    company_name: "Oracle Academy",
+    icon: Oracle,
+    iconBg: "#fff",
+    borderBottomModel: "#e72e15",
+    date: "2024",
+    points: [
+      "Fundamentos do Java: Aprendi os conceitos fundamentais da linguagem Java, incluindo manipulação de variáveis, estruturas de controle e conceitos de orientação a objetos.",
+      "Desenvolvimento de Aplicações Básicas: Desenvolvi habilidades na criação de programas Java básicos para resolver problemas do mundo real.",
+      "Manipulação de Dados e Estruturas de Dados: Aprofundei-me na manipulação de dados e aprendi sobre diferentes estruturas de dados em Java.",
+      "Boas Práticas de Programação: Adotei boas práticas de programação e desenvolvi habilidades de resolução de problemas.",
+    ],
+  },
+  {
+    title: "Oracle Database Foundations Learner",
+    company_name: "Oracle Academy",
+    icon: Oracle,
+    iconBg: "#fff",
+    borderBottomModel: "#e72e15",
+    date: "2024",
+    points: [
+      "Fundamentos de Bancos de Dados: Adquiri uma compreensão sólida dos princípios fundamentais dos bancos de dados, incluindo conceitos como modelagem de dados, normalização e integridade referencial.",
+      "SQL Básico e Avançado: Desenvolvi habilidades essenciais em SQL (Structured Query Language) para consulta, manipulação e gerenciamento de dados em um ambiente de banco de dados Oracle.",
+      "Design e Administração de Bancos de Dados: Aprendi sobre os princípios de design e administração de bancos de dados, incluindo criação de tabelas, índices, visões e procedimentos armazenados.",
+      "Segurança e Integridade de Dados: Explorei técnicas para garantir a segurança e a integridade dos dados em um banco de dados Oracle.",
+    ],
+  },
+  {
+    title: "Citizen Developer Practitioner Micro-Credential",
+    company_name: "PMI (Project Management Institute)",
+    icon: Pmi,
+    iconBg: "#fff",
+    borderBottomModel: "#05bfe0",
+    date: "2024",
+    points: [
+      "Metodologias Ágeis: Aprendi os princípios e práticas das metodologias ágeis, como Scrum, Kanban e Extreme Programming (XP), que enfatizam a entrega iterativa e incremental de software, colaboração próxima com o cliente e adaptação contínua aos requisitos em mudança.",
+      "Desenvolvimento de Aplicativos: Adquiri conhecimentos sobre os fundamentos do desenvolvimento de aplicativos, incluindo a criação de interfaces de usuário intuitivas e funcionais.",
+      "Automação de Processos: Explorei técnicas para automatizar processos de negócios por meio do desenvolvimento de aplicativos e integrações.",
+      "Análise de Dados: Desenvolvi habilidades em análise de dados para extrair insights e informar a tomada de decisões baseada em dados.",
+    ],
+  },
+];
 
 export const socialLinks = [
   {
@@ -246,11 +287,11 @@ export const projects = [
     link: "https://github.com/joao-victor-fonseca/eSports?tab=readme-ov-file",
   },
   {
-    iconUrl: Dashgo ,
+    iconUrl: Dashgo,
     theme: "btn-back-black",
     name: "DashGo",
-    description: "Projeto desenvolvido durante o Ignite React da Rocketseat que mostra um Dashboard com gráfico e também um cadastro de usuários",
+    description:
+      "Projeto desenvolvido durante o Ignite React da Rocketseat que mostra um Dashboard com gráfico e também um cadastro de usuários",
     link: "https://github.com/joao-victor-fonseca/Dashgo.",
   },
-  
 ];
