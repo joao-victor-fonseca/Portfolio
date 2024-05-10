@@ -18,9 +18,9 @@ export const About = () => {
 
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
         <p>
-          Sou João Victor Fonseca Assis, possuo grande interesse em resolver
-          problemas e aprender coisas novas. Estou sempre aberto a desafios,
-          mudanças e a aquisição de novos conhecimentos.
+          Possuo grande interesse em resolver problemas e aprender coisas novas.
+          Estou sempre aberto a desafios, mudanças e a aquisição de novos
+          conhecimentos.
           <br />
           Atualmente estou cursando a graduação em Ciência da Computação. Minha
           jornada na área de tecnologia começou com um profundo interesse em
