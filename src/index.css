@@ -4,6 +4,31 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .wave {
+    animation-name: wave-animation;
+    animation-duration: 2.1s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+  }
+
+  @keyframes wave-animation {
+    0%,
+    100% {
+      transform: rotate(-15deg);
+    }
+    20%,
+    60% {
+      transform: rotate(15deg);
+    }
+    40%,
+    80% {
+      transform: rotate(-5deg);
+    }
+  }
+}
+
 :root {
   --blue-rgb: 237 245 255;
   --green-rgb: 125 161 35;
@@ -184,4 +209,14 @@ body:has(.card[data-color="green"]:hover) {
   border: #fff;
   box-shadow: 0.6vmin 0.6vmin #fff, 1vmin 1vmin #d2e4ff, 1vmin 1vmin #d2e4ff,
     0.65vmin 1vmin #d2e4ff, 1vmin 0.65vmin #d2e4ff;
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
 }

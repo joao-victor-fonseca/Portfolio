@@ -1,10 +1,10 @@
  <p align="center" >
-    <img src="./public/gif.gif">
+    <img src="./public/ilustracao.png">
 </p>
 
 ###
 
-<p align="left">Este repositório contém o código-fonte do meu site de portfólio pessoal, uma plataforma online que destaca minhas habilidades, projetos e experiências profissionais.</p>
+<p align="center">Este repositório contém o código-fonte do meu site de portfólio pessoal, uma plataforma online que destaca minhas habilidades, projetos e experiências profissionais.</p>
 
 ###
 
@@ -25,7 +25,6 @@
 
 ###
 
-
   <a href="https://github.com/joao-victor-fonseca" target="_blank">
     <img src="https://skillicons.dev/icons?i=github&theme=dark" width="52" height="40" alt="Git Hub"  />
   </a>
@@ -36,17 +35,14 @@
     <img src="https://skillicons.dev/icons?i=gmail&theme=dark" width="52" height="40" alt="gmail logo"  />
   </a>
 
-
 ###
 
 ## Autor
-
 
 <a href="https://github.com/account" align="center" >
  <img style="border-radius:50%" src="https://avatars.githubusercontent.com/u/84512746?v=4" width="100px;" alt="João Victor Fonseca" />
  <br />
  <sub><b>João Victor Fonseca</b></sub></a> <a href="https://github.com/joao-victor-fonseca" title="perfil">🚀
  </a>
-
 
 Feito com ❤️ por João Victor Fonseca Assis 👋🏽 Entre em contato!

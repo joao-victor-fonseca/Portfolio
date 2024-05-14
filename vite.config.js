@@ -8,7 +8,7 @@ export default defineConfig({
 });
 
 ({
-	manualChunks: {
-		lodash: ['lodash']
-	}
+  manualChunks: {
+    lodash: ["lodash"],
+  },
 });

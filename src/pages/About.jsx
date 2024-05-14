@@ -10,10 +10,8 @@ export const About = () => {
   return (
     <section className="max-container">
       <h1 className="head-text">
-        Olá, meu nome é{" "}
-        <span className="blue-gradient_text font-bold drop-shadow">
-          João Victor
-        </span>
+        Sobre{" "}
+        <span className="blue-gradient_text font-bold drop-shadow">mim</span>
       </h1>
 
       <div className="mt-5 flex flex-col gap-3 text-slate-500">

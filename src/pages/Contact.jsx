@@ -146,9 +146,7 @@ export const Contact = () => {
           <div className="flex flex-col gap-2 justify-center items-center ">
             <div className="flex gap-2 h-10">
               <LinkedinShareButton
-                url={
-                  "https://www.linkedin.com/in/jo%C3%A3o-victor-fonseca-assis-b17516207/"
-                }
+                url={"https://www.linkedin.com/in/joaovictorfonsecaassis/"}
               >
                 <LinkedinIcon size={42} round />
               </LinkedinShareButton>
