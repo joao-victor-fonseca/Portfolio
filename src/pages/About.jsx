@@ -11,7 +11,7 @@ export const About = () => {
     <section className="max-container">
       <h1 className="head-text">
         Sobre{" "}
-        <span className="blue-gradient_text font-bold drop-shadow">mim</span>
+        <span className="blue-gradient_text font-bold drop-shadow">Mim</span>
       </h1>
 
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
