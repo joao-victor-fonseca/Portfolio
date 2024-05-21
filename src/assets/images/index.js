@@ -1,3 +1,3 @@
-import homeMain from "./home-main.svg";
+import homeMain from "./home-main.png";
 
 export { homeMain };

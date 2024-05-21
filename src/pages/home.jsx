@@ -28,7 +28,7 @@ export const Home = () => {
             <img
               src={homeMain}
               alt="Home main"
-              className="max-w-xs md:max-w-full w-full h-auto"
+              className="max-w-xs md:max-w-full w-full h-auto rounded-xl "
             />
           </div>
         </div>
