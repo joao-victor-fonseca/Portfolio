@@ -1,4 +1,3 @@
-//** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -17,6 +16,13 @@ export default {
       },
       animation: {
         wave: "wiggle 1s ease-in-out infinite",
+        gradient: "gradientAnimation 15s ease infinite",
+      },
+      keyframes: {
+        gradientAnimation: {
+          "0%, 100%": { backgroundPosition: "0% 50%" },
+          "50%": { backgroundPosition: "100% 50%" },
+        },
       },
       fontFamily: {
         worksans: ["Work Sans", "sans-serif"],

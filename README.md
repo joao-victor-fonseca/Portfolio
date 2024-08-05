@@ -1,5 +1,5 @@
  <p align="center" >
-    <img src="./public/ilustracao.png">
+    <img src="./public/ilustracao.gif">
 </p>
 
 ###
@@ -14,7 +14,7 @@
 
 <div align="left">
   <a href="#">
-    <img src="https://skillicons.dev/icons?i=git,js,react,tailwind,vite,github&theme=dark" />
+    <img src="https://skillicons.dev/icons?i=git,js,react,tailwind,vite,github,threejs&theme=dark" />
   </a>
  
 </div>

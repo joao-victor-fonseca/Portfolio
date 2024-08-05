@@ -30,7 +30,9 @@ import rocketseat from "./rocketseat.svg";
 import cisco from "./cisco.svg";
 import aws from "./aws.svg";
 import nlwIa from "./nlwIa.svg";
+import radarEconomico from "./radar-economico.svg";
 import nlwEsportsLogo from "./nlw-esports-logo.svg";
+import GragasSolution from "./GragasSolution.png";
 import Dashgo from "./Dashgo.svg";
 import java from "./java.svg";
 import CarShowcase from "./CarShowcase.png";
@@ -65,6 +67,8 @@ export {
   docker,
   una,
   rocketseat,
+  radarEconomico,
+  GragasSolution,
   cisco,
   aws,
   nlwIa,

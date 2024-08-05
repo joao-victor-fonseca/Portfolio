@@ -4,6 +4,38 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Global Styles */
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+/* Keyframes */
+@keyframes wave-animation {
+  0%,
+  100% {
+    transform: rotate(-15deg);
+  }
+  20%,
+  60% {
+    transform: rotate(15deg);
+  }
+  40%,
+  80% {
+    transform: rotate(-5deg);
+  }
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Custom Components */
 @layer components {
   .wave {
     animation-name: wave-animation;
@@ -13,42 +45,17 @@
     display: inline-block;
   }
 
-  @keyframes wave-animation {
-    0%,
-    100% {
-      transform: rotate(-15deg);
-    }
-    20%,
-    60% {
-      transform: rotate(15deg);
-    }
-    40%,
-    80% {
-      transform: rotate(-5deg);
-    }
+  .btn-primary {
+    @apply bg-blue-500 text-white py-2 px-4 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300;
   }
 }
 
-:root {
-  --blue-rgb: 237 245 255;
-  --green-rgb: 125 161 35;
-}
-
-body {
-  font-family: "Work Sans", sans-serif;
-}
-
-body:has(.card[data-color="blue"]:hover) {
-  background-color: rgb(var(--blue-rgb) / 25%);
-}
-
-body:has(.card[data-color="green"]:hover) {
-  background-color: rgb(var(--green-rgb) / 25%);
-}
-
+/* Custom Utilities */
 @layer utilities {
   .max-container {
-    @apply max-w-5xl mx-auto sm:p-16 pb-12 !pt-[126px] px-8 min-h-[calc(100vh-80px)];
+    @apply max-w-5xl mx-auto px-6 py-12 sm:px-12 sm:py-16;
+    min-height: calc(100vh - 4rem);
+    margin-top: 4rem;
   }
 
   .head-text {
@@ -104,6 +111,27 @@ body:has(.card[data-color="green"]:hover) {
   }
 }
 
+/* Custom Styles */
+.text-gradient {
+  background: linear-gradient(90deg, #1e40af, #9333ea);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+:root {
+  --blue-rgb: 237 245 255;
+  --green-rgb: 125 161 35;
+}
+
+body:has(.card[data-color="blue"]:hover) {
+  background-color: rgb(var(--blue-rgb) / 25%);
+}
+
+body:has(.card[data-color="green"]:hover) {
+  background-color: rgb(var(--green-rgb) / 25%);
+}
+
+/* Glassmorphism */
 .glassmorphism {
   background: rgba(8, 116, 239, 0.07);
   backdrop-filter: blur(10px);
@@ -112,6 +140,7 @@ body:has(.card[data-color="green"]:hover) {
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
+/* Logo */
 .logo {
   border-radius: 8.889px;
   background: #fff;
@@ -119,6 +148,7 @@ body:has(.card[data-color="green"]:hover) {
     0px 1.5px 4px -1px rgba(67, 83, 255, 0.2);
 }
 
+/* Block Container */
 .block-container {
   position: relative;
   transition: 250ms;
@@ -211,12 +241,56 @@ body:has(.card[data-color="green"]:hover) {
     0.65vmin 1vmin #d2e4ff, 1vmin 0.65vmin #d2e4ff;
 }
 
-@keyframes wave {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
+.cta {
+  background: linear-gradient(to right, #4a90e2, #d06db0);
+  padding: 2rem;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 4rem;
+}
+
+.cta p {
+  color: #fff;
+  font-size: 1.875rem; /* 30px */
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.cta .btn {
+  background: #fff;
+  color: #4a90e2;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.cta .btn:hover {
+  background: #f1f1f1;
+}
+
+/* Navbar Styles */
+.navbar {
+  @apply fixed top-0 left-0 w-full p-4 bg-gray-900 backdrop-blur-md shadow-md z-50 flex justify-between items-center;
+}
+
+.navbar .logo {
+  @apply w-10 h-10 bg-white rounded-lg flex items-center justify-center font-bold shadow-md;
+}
+
+.navbar .logo p {
+  @apply text-xl text-gradient bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent;
+}
+
+.navbar nav {
+  @apply flex text-lg gap-7 font-medium;
+}
+
+.navbar a {
+  @apply text-white hover:text-blue-400 transition-colors duration-300;
+}
+
+.navbar .active {
+  @apply text-blue-400 border-b-2 border-blue-400;
 }

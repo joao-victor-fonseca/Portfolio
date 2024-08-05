@@ -2,67 +2,63 @@ import { Link } from "react-router-dom";
 import { projects } from "../constants";
 import { arrow } from "../assets/icons";
 import { CTA } from "../components/CTA";
+
 export const Projects = () => {
   return (
-    <section className="max-container h-screen">
-      <h1 className="head-text">
-        Meus{" "}
-        <span className="blue-gradient_text font-bold drop-shadow">
-          Projetos
-        </span>
+    <section className="max-container py-20">
+      <h1 className="text-4xl font-bold text-center mb-8">
+        Meus <span className="text-gradient">Projetos</span>
       </h1>
-
-      <div className="mt-5 flex flex-col gap-3 text-slate-500">
-        <p>
-          Embarquei em vários projetos ao longo dos anos, mas estes são os que
-          tenho mais em meu coração. Muitos deles são de código aberto,
-          portanto, se você encontrar algo que desperte seu interesse, sinta-se
-          à vontade para explorar a base de código e contribuir com suas ideias
-          para melhorias adicionais. Sua colaboração é altamente valorizada!
-        </p>
-      </div>
-
-      <div className="flex flex-wrap my-20 gap-16">
+      <p className="text-lg text-gray-700 text-center mb-16">
+        Estes são alguns dos projetos que mais tenho orgulho. Muitos deles são
+        de código aberto, então sinta-se à vontade para explorar e contribuir
+        com suas ideias.
+      </p>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
         {projects.map((project) => (
-          <div className="lg:w-[400px] w-full" key={project.name}>
-            <div className="block-container w-12 h-12">
-              <div className={`btn-back rounded-xl ${project.theme}`} />
-              <div className="btn-front rounded-xl flex justify-center items-center">
-                <img
-                  src={project.iconUrl}
-                  alt="Project Url"
-                  className="w-30 h-30 object-contain"
-                />
-              </div>
+          <div
+            className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105 flex flex-col justify-between"
+            key={project.name}
+            style={{
+              backgroundImage: `url(${project.backgroundImageUrl})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
+            <div
+              className={`p-6 ${project.theme} flex-grow bg-white bg-opacity-75`}
+            >
+              <img
+                src={project.iconUrl}
+                alt={`Ícone do projeto ${project.name}`}
+                className="w-24 h-24 mx-auto"
+              />
+              <h4 className="text-2xl font-semibold text-center mt-4">
+                {project.name}
+              </h4>
+              <p className="text-gray-600 text-center mt-2">
+                {project.description}
+              </p>
             </div>
-
-            <div className="mt-5 flex flex-col">
-              <h4 className="subhead-text">{project.name}</h4>
-              <p className="mt-2 text-slate-500">{project.description}</p>
-              <div>
-                <Link
-                  to={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-semibold text-blue-600"
-                >
-                  Live Link
-                </Link>
+            <div className="text-center mt-4 p-6 bg-white bg-opacity-75">
+              <Link
+                to={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 font-semibold flex items-center justify-center hover:text-blue-800"
+              >
+                Live Link{" "}
                 <img
                   src={arrow}
-                  alt="arrow"
-                  className=" w-4 h-4 object-contain"
+                  alt="Seta indicando link"
+                  className="w-4 h-4 ml-2"
                 />
-              </div>
+              </Link>
             </div>
           </div>
         ))}
       </div>
-
-      <hr className="border-slate-200" />
-
       <CTA />
     </section>
   );
 };
-1;

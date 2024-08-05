@@ -28,6 +28,8 @@ import {
   nlwEsportsLogo,
   Dashgo,
   CarShowcase,
+  radarEconomico,
+  GragasSolution,
 } from "../assets/icons";
 
 export const skills = [
@@ -263,6 +265,14 @@ export const socialLinks = [
 
 export const projects = [
   {
+    iconUrl: radarEconomico,
+    theme: "btn-back-blue",
+    name: "radar econômico",
+    description:
+      "Desenvolvi uma plataforma que centraliza dados sobre municípios para facilitar investimentos. Um aplicativo móvel interage com bases de dados públicas, útil para cidades semelhantes. O projeto foi apresentado na 6th International Conference on Future of Business, Management and Economics, realizada virtualmente em Copenhague, Dinamarca 🇩🇰.",
+    link: "https://www.dpublication.com/abstract-of-6th-icfbme/20-ime5-2544/",
+  },
+  {
     iconUrl: nlwIa,
     theme: "btn-back-black",
     name: "Upload.AI",
@@ -293,5 +303,13 @@ export const projects = [
     description:
       "Projeto desenvolvido durante o Ignite React da Rocketseat que mostra um Dashboard com gráfico e também um cadastro de usuários",
     link: "https://github.com/joao-victor-fonseca/Dashgo.",
+  },
+  {
+    iconUrl: GragasSolution,
+    theme: "btn-back-black",
+    name: "GragasSolution",
+    description:
+      "Gragas Solution é um sistema de gerenciamento de estoque para empresas que produzem PLCs. Monitora componentes essenciais (processadores, memórias, cristais de clock, displays IHM, soquetes, dissipadores, fontes) e emite alertas quando os níveis de estoque caem abaixo de 10%. Fácil de usar e eficiente.",
+    link: "https://github.com/joao-victor-fonseca/GragasSolution",
   },
 ];
